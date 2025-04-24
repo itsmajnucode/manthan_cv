@@ -1,66 +1,676 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manthan Bhatt | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manthan Bhatt - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/my-avatar.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1>Manthan Bhatt</h1>
-      <p>Flutter Developer | Software Engineer</p>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+        <a href="./assets/images/manthan_bhatt.png" target="_blank" rel="noopener noreferrer" title="Click me!">
+          <figure class="avatar-box">
+            <img src="./assets/images/my-avatar.png" alt="Manthan Bhatt" width="80">
+            <span class="active-status" title="Available for work!"></span>
+          </figure>
+        </a>
+
+        <div class="info-content">
+          <h1 class="name" title="Manthan Bhatt">Manthan Bhatt</h1>
+          <p class="title">Flutter Developer & Software Engineer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:bhattmanthan552@gmail.com" class="contact-link">bhattmanthan552@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+33 07 59 59 55 63" class="contact-link">+33 07 59 59 55 63</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Paris, France</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/manthan-bhatt-7a015b203" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Currently pursuing a master's in computer science with a specialization in software engineering at EPITA, Paris, 
+            I am looking for an end-of-study internship from September. I have a diverse background in Flutter mobile application 
+            development, cross-platform app development, API integration, and basic software testing.
+          </p>
+
+          <p>
+            With 2+ years of professional experience as a Flutter developer, I am eager to apply my skills in a challenging 
+            environment that fosters growth and innovation. My expertise includes UI development, state management, Firebase 
+            integration, and app store compliance.
+          </p>
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile Apps</h4>
+                <p class="service-item-text">
+                  Professional development of cross-platform applications using Flutter for Android and iOS.
+                </p>
+              </div>
+
+            </li>
+            
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">API Integration</h4>
+                <p class="service-item-text">
+                  Seamless integration of RESTful APIs and third-party services into mobile applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI Implementation</h4>
+                <p class="service-item-text">
+                  Creating responsive and intuitive user interfaces following modern design principles.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-backend.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Firebase Services</h4>
+                <p class="service-item-text">
+                  Implementation of Firebase services including Firestore, Authentication, and Cloud Messaging.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - Skills
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Skills</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://dart.dev/" target="_blank">
+                <img src="./assets/skills/Dart.svg" alt="Dart" style="filter: none;">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://flutter.dev/" target="_blank">
+                <img src="./assets/skills/Flutter.svg" alt="Flutter">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://firebase.google.com/" target="_blank">
+                <img src="./assets/skills/Firebase.svg" alt="Firebase">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.postman.com/" target="_blank">
+                <img src="./assets/skills/Postman.svg" alt="Postman">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.figma.com/" target="_blank">
+                <img src="./assets/skills/Figma.svg" alt="Figma">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://developer.android.com/studio" target="_blank">
+                <img src="./assets/skills/AndroidStudio.svg" alt="Android Studio">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">EPITA School of Engineering & Computer Science</h4>
+              <p class="timeline-text">Masters in Computer Science specializing in Software Engineering</p>
+              <span>Current</span>
+              <p class="timeline-text">Courses: Software Industry, International Business Development & Project Management</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Apollo College of Engineering & Technology</h4>
+              <p class="timeline-text">Bachelor of Engineering in Information Technology</p>
+              <span>Graduated</span>
+              <p class="timeline-text">Courses: Frontend & Backend Development/Services, Quality Assurance & Management</p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+        
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineer - Flutter Developer</h4>
+              <p class="timeline-text">Universal Software</p>
+              <span>Sep 2023 - Sep 2024</span>
+              <p class="timeline-text"><i>Gujarat, India</i></p>
+              <ul class="timeline-text">
+                <li>Managed live projects and collaborated with international clients for requirement gathering and project delivery</li>
+                <li>Reviewed mobile application releases, ensuring smooth transitions from development to production</li>
+                <li>Ensured compliance with Google and Apple developer policies for successful app submissions</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineer - Flutter Developer</h4>
+              <p class="timeline-text">Biztech Consulting & Solutions</p>
+              <span>Nov 2022 - Aug 2023</span>
+              <p class="timeline-text"><i>Gujarat, India</i></p>
+              <ul class="timeline-text">
+                <li>Developed expertise in Flutter and Dart, including UI development and state management</li>
+                <li>Implemented Firebase services (Firestore, Authentication, Cloud Messaging, Analytics)</li>
+                <li>Optimized application performance for better user experience</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineering Intern - Flutter</h4>
+              <p class="timeline-text">Applicum International</p>
+              <span>Jun 2022 - Nov 2022</span>
+              <p class="timeline-text"><i>Gujarat, India</i></p>
+              <ul class="timeline-text">
+                <li>Gained understanding of Flutter App Life Cycle and state management</li>
+                <li>Implemented UI and API integration using BLoC pattern</li>
+                <li>Collaborated with team members on application development</li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Projects</h3>
+          </div>
+        
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Connect My Health (UK)</h4>
+              <p class="timeline-text">Healthcare application for connecting with doctors and managing medical records</p>
+              <ul class="timeline-text">
+                <li>Features: Doctor appointment booking, medical records access, secure payments</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">PaceX (Netherlands)</h4>
+              <p class="timeline-text">Driving lesson booking app with satellite tracking</p>
+              <ul class="timeline-text">
+                <li>Features: Speed and location tracking, lesson scheduling</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Danev Foundation</h4>
+              <p class="timeline-text">Emergency animal care application</p>
+              <ul class="timeline-text">
+                <li>Features: Case reporting, treatment notes, case tracking</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Fincase (India)</h4>
+              <p class="timeline-text">Financial application for IPO management</p>
+              <ul class="timeline-text">
+                <li>Features: IPO news/alerts, live GMP data, subscription management</li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Flutter Development</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">API Integration</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Firebase Services</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">UI Implementation</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Healthcare</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Education</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Finance</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Healthcare</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Education</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Finance</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="healthcare">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/projects/connect_my_health.png" alt="Connect My Health" loading="lazy">
+                </figure>
+                <h3 class="project-title">Connect My Health</h3>
+                <p class="project-category">Healthcare</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="education">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/projects/pacex.png" alt="PaceX" loading="lazy">
+                </figure>
+                <h3 class="project-title">PaceX</h3>
+                <p class="project-category">Education</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="healthcare">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/projects/danev.png" alt="Danev Foundation" loading="lazy">
+                </figure>
+                <h3 class="project-title">Danev Foundation</h3>
+                <p class="project-category">Healthcare</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="finance">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/projects/fincase.png" alt="Fincase" loading="lazy">
+                </figure>
+                <h3 class="project-title">Fincase</h3>
+                <p class="project-category">Finance</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Paris+(My%20Location)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+        
+          <form action="#" method="POST" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+        
+            <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input>
+        
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+        
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+
+      </article>
+
     </div>
-  </header>
 
-  <section class="about container">
-    <h2>About Me</h2>
-    <p>I'm a passionate Flutter Developer with a solid background in software engineering, currently pursuing an MSc at EPITA, Paris. I love building cross-platform mobile apps that solve real-world problems.</p>
-  </section>
+  </main>
 
-  <section class="skills container">
-    <h2>Skills</h2>
-    <ul>
-      <li>Flutter & Dart</li>
-      <li>Android Studio, Xcode</li>
-      <li>REST API Integration</li>
-      <li>Bloc & GetX Architecture</li>
-      <li>JSON, Postman</li>
-      <li>UI Implementation (Figma)</li>
-    </ul>
-  </section>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
 
-  <section class="projects container">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Career App</h3>
-      <p>Built a career-guidance mobile app using Flutter and Firebase. Integrated real-time updates and dynamic content delivery.</p>
-    </div>
-    <div class="project-card">
-      <h3>COVID Care App</h3>
-      <p>Designed a healthcare tracker for real-time stats, medical advice, and emergency support.</p>
-    </div>
-  </section>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <section class="education container">
-    <h2>Education</h2>
-    <ul>
-      <li>MSc in Computer Science – EPITA, France (2024–2026)</li>
-      <li>B.E. in IT – Apollo Institute, Ahmedabad (2021–2024)</li>
-      <li>Diploma in IT – R.C. Technical Institute (2018–2021)</li>
-    </ul>
-  </section>
-
-  <section class="contact container">
-    <h2>Contact</h2>
-    <p>Email: manthanbhatt.dev@gmail.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/manthan-bhatt-7a015b203" target="_blank">Profile</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Manthan Bhatt. All rights reserved.</p>
-  </footer>
 </body>
+
 </html>
